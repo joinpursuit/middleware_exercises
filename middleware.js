@@ -13,7 +13,8 @@ app.get("/random/", random.generateSpread, (req, res) => {
   res.json(res.sender);
 });
 
-app.get("/queue", queuehandle.functionChooser, (req, res) => {
+app.get("/queue/:wildcard", queuehandle.functionChooser, (req, res) => {
+  // console.log(req.params.wildcard);
   res.json(res.sender);
 });
 
