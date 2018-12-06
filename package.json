@@ -1,0 +1,22 @@
+{
+  "name": "middleware_exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godsby/middleware_exercises.git"
+  },
+  "author": "Leo Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godsby/middleware_exercises/issues"
+  },
+  "homepage": "https://github.com/Godsby/middleware_exercises#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
