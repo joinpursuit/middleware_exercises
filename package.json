@@ -2,7 +2,7 @@
   "name": "middleware_exercises",
   "version": "1.0.0",
   "description": "express 4 hw",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
