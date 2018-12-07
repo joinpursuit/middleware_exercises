@@ -15,13 +15,13 @@ const queueObj = queue.obj
 const queueChoice = queue.queueHandler
 
 
-// app.get('/animal/:animalType', animalChoice, (req, res) => {
-//   res.json(thisObj)
-// })
+app.get('/animal/:animalType', animalChoice, (req, res) => {
+  res.json(thisObj)
+})
 
-// app.get('/random', randomChoice, (req, res) => {
-//   res.json(randomObj)
-// })
+app.get('/random', randomChoice, (req, res) => {
+  res.json(randomObj)
+})
 
 app.get('/queue/:choice', queueChoice, (req, res) => {
   res.json(queueObj)
