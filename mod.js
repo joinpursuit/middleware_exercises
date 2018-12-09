@@ -1,34 +1,39 @@
 const express = require('express');
 const app = express();
 
-let animalList = ["zebra", "tiger", "lion"]
-
+let animalList = ["zebra", "tiger", "lion", "goat"]
 
 
 
 const animalSearch = (req, res, next) => {
-  // console.log("log"/*, req.params.species*/);
   console.log(req.params.species);
-  // res.json({message: req.params.species})
-
   let search = req.params.species;
-  // let res.status;
-  // let res.message;
+  let answer;
+  // let status;
+  //  // = res.status;
+  // let message;
+   // = res.message;
   animalList.forEach(string => {
-    if (search === string) {
-      res.status = "success",
-      res.message = true
+    if (string === search) {
+      answer = {
+        status: "success",
+        message: true
+      }
     } else {
-      res.status = "failure",
-      res.message = false
+      answer = {
+        status: "failure",
+        message: false
+      }
     }
   })
-  console.log(res.status);
-  // console.log("here",status, message);
-  // res.msg = [status, message]
+  res.answer;
+  console.log(search, res.answer);
+  // res.status = status;
+  // res.message = message;
+  // console.log("here", res.status, res.message);
 
-// res.json()
-  // res.json({status, message})
+  // console.log(res.status, res.message);
+  // res.json({thestatus:status, themessage:message})
   next()
 }
 
@@ -36,7 +41,9 @@ const animalSearch = (req, res, next) => {
 
 
 const finalFunction = (req, res) => {
-  res.json({status: res.status, message: res.message})
+  console.log("hhhh", answer);
+  res.json({answer})
+  // res.json({status: theStatus, message: theMessage})
   // console.log("here",req.params.species);
   // res.json(res.msg)
 
