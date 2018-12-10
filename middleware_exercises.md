@@ -35,6 +35,8 @@ For example, the request at `localhost:3000/random?floor=10&ceil=23` should retu
 
 In order to help us pick a random number, we first need to assemble an array with each number in between the numbers in our range. Create a middleware function `generateSpread` which assembles an array of all integers between the two inputs. Once you've assembled this array, send your response with a random choice from it.
 
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
 ## `/queue` - Queue manager.
 
 Create an array full of strings representing people's names in some kind of line (or _queue_). Account for three additional URL parameters: `/peek`, `/enqueue`, and `/dequeue`. These should access and modify the array in the **same ways** that you'd access and modify a queue. For our purposes, the **end** of the array will represent the **front** of the queue. For example, with the array `['xavier', 'michelle', 'corey', 'reed']`:

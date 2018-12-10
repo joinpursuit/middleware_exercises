@@ -3,7 +3,7 @@ const app = express();
 //------------------------------------
 let animalList = ["zebra", "tiger", "lion", "goat"]
 //------------------------------------
-const animalSearch = (req, res, next) => {
+const isAnimal = (req, res, next) => {
   res.status = "failure";
   res.message = false;
 
@@ -25,7 +25,7 @@ const error = (req, res) => {
   res.json({message: "👎👿404"});
 }
 //------------------------------------
-app.get('/animal/:species',animalSearch,finalFunction)
+app.get('/animal/:species',isAnimal,finalFunction)
 app.get('/*', error)
 //------------------------------------
 const port = 3500;
